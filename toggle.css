@@ -1,0 +1,86 @@
+body {
+    font-size: 100%;    
+    color: #333;
+    line-height: 1.6;
+    font-weight: normal;
+    background: brown;
+}
+
+header.target-burger {
+    position: absolute;
+    top: 0;
+    z-index: 15;
+}
+
+.target-burger {
+    margin: 1.125em;
+    width: 3.25em;
+    height: 3.25em;
+    position: absolute;
+    transition: all 0.5s ease
+}
+
+.target-burger:hover {
+    cursor: pointer;
+    opacity: 0.45;
+}
+
+.target-burger ul.buns {
+    width: 1.625em;
+    height: 1.625em;
+    list-style: none;
+    margin: -0.8125em 0 0 -0.8125em;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: transform 1s cubic-bezier(0.23, 1, 0.32, 1), color 1s cubic-bezier(0.23, 1, 0.32, 1);
+    transform: translateZ(0);
+    color: #fff;
+}
+
+.target-burger ul.buns li.bun{
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    margin-top: -0.75px;
+    transform: translateY(-3.75px) translateZ(0);
+    transition: transform 1s cubic-bezier(0.23, 1, 0.32, 1), background-color 1s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.target-burger ul.buns li.bun:last-child {
+    transform: translateY(3.75px) translateZ(0);
+}
+
+.toggled .target-burger ul.buns li.bun {
+    transform: rotate(45deg) translateZ(0);
+}
+
+.toggled .target-burger ul.buns li.bun:last-child {
+    transform: rotate(-45deg) translateZ(0);
+}
+
+
+nav.main-nav {
+    background: #232a34;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    padding: 2em;
+    opacity: 0;
+    transform: scale(0.85);
+    transition: all 0.5s ease;
+}
+
+.toggled nav.main-nav {
+    display: block;
+    z-index: 10;
+    transform: scale(1);
+    opacity: 1;
+    transition: all 0.5s ease;
+}
