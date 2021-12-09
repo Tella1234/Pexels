@@ -1,0 +1,26 @@
+{
+  "name": "pexels",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss src/styles.css -o css/output.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tella1234/Pexels.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tella1234/Pexels/issues"
+  },
+  "homepage": "https://github.com/Tella1234/Pexels#readme",
+  "dependencies": {
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.4",
+    "postcss-cli": "^9.0.2",
+    "tailwindcss": "^2.2.19"
+  }
+}
