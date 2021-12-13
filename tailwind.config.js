@@ -1,11 +1,26 @@
 module.exports = {
   mode: 'jit',
-  purge: [
-    '.public/**/*.{html,js}'
+  content: [
+    '.public/**/*.{html,js}',
+    'index2.html'
   ],
-  darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        nunito: "'Nunito Sans', sans-serif",
+      },
+      spacing: {
+        '97': '28rem',
+        '100': '40rem',
+      },
+      colors: {
+        jgreen: {
+          light: '#044a2f',
+          DEFAULT: '#05a081',
+          dark: '#0ac77e'
+        }
+      }
+    },
   },
   variants: {
     extend: {},
