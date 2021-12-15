@@ -10,3 +10,16 @@
         font-size: 26px;
     }
 }
+.change .bar1 {
+    @apply -rotate-45 -translate-x-103 translate-y-101
+}
+.change .bar2 {
+    @apply opacity-0 
+}
+.change .bar3 {
+    @apply rotate-45 -translate-x-103 -translate-y-101
+}
+
+.toggled .navbar {
+    @apply block
+}
